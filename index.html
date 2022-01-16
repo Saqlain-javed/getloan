@@ -74,7 +74,10 @@
      </li>
   </ul>
 </section>
-<section class="account" id="types">
+
+
+<section class="account " id="types">
+ 
   <h2>Loan types</h2>
   <ul>
    <li>
@@ -87,41 +90,48 @@
      <p>Bussiness loan</p>
    </li>
    <ul>
+   
 </section>
+
+
 <section class="account" id="calculte">
   <h2>Calculate Loan</h2>
-<form action="" class="form" id="loan-cal">
+<div class="form" id="loan_cal" >
   <div class="input-container" ><label for="loan_period">Loan Period</label>
-    <select name="loan_period" id="loan_period" class="select">
+    <select name="loan_period" id="loan_period" class="select" value="">
       <option value="1">1 year</option>
       <option value="2">2 year</option>
       <option value="4">4 year</option>
       <option value="8">8 year</option>
     </select>
   </div>
-  <div><label for=""></label>
-    <select name="" id="">
-      <option value=""></option>
+  <div class="input-container" ><label for="amount">Amount</label>
+  <div>
+    <input type="number" value="" oninput="check_amount()" placeholder="10k-100k" id="amount" name="amount" min="10000" max="100000" >
+    <span id="error"></span>
+  </div>
+  </div>
+  <div class="input-container"><label for="installments">Installments</label>
+    <select name="installments" id="installments" class="select" value="">
+      <option value="1">1 months</option>
+      <option value="3">3 months</option>
+      <option value="6">6 months</option>
+      <option value="12">12 months</option>
     </select>
   </div>
-  <div><label for=""></label>
-    <select name="" id="">
-      <option value="yy">ee</option>
-      <option value="yy">ee</option>
-      <option value="yy">ee</option>
-      <option value="yy">ee</option>
-    </select>
-  </div>
-</form>
+  <button type="button" onclick="calculate_loan()">Calculate</button>
+  <h3 id="installment"></h3>
+</div>
 </section>
 <section class="account" id="apply">
   <h2>apply</h2>
-  <iframe src="https://yb-solution.vercel.app/" frameborder="0" style="width: 100%; height: 500px;"></iframe>
+  <!-- <iframe src="https://yb-solution.vercel.app/" frameborder="0" style="width: 100%; height: 500px;"></iframe> -->
 </section>
 <section class="account" id="return">
   <h2>return coming soon</h2>
    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dolorem itaque obcaecati nesciunt corporis id repudiandae alias aperiam adipisci, fugit voluptatibus cupiditate praesentium, impedit nemo laboriosam nam consequatur vero quo. Perferendis, optio laborum, quidem at nostrum odio minima sequi dolorum doloremque corporis excepturi, ut velit similique eius autem saepe facere debitis distinctio ipsa. Nulla, omnis hic? Consequatur qui perferendis impedit architecto necessitatibus quasi obcaecati magnam dolorum quia nam maxime magni repudiandae sit blanditiis nisi dolor deleniti libero modi quaerat, quibusdam debitis? Optio fugit deserunt rerum sit perspiciatis quasi minus? Porro molestiae totam accusantium quo praesentium expedita eius, consectetur sequi nam.</p>
 </section> 
 </main>
+<script src="./index.js"></script>
 </body>
 </html> 

@@ -7,6 +7,7 @@ body {font-family: "Lato", sans-serif;}
     background-position: bottom;
 }
 .account{
+ 
     margin:auto;
     max-width: 100%;
     padding: 30px;
@@ -18,6 +19,7 @@ body {font-family: "Lato", sans-serif;}
     flex-direction: column;
     align-items: center;
 }
+
 
 .sidebar {
   height: 100%;
@@ -57,13 +59,23 @@ main {
   box-shadow: 10px 10px #d9d9d9;
 }
 .input-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
+.input-container div{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+.input-container div span{
+  text-align: left;
+}
 .select{
   width: 100%;
-  max-width: 200px;
+  max-width: 180px;
 }
+
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
