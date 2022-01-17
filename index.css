@@ -1,3 +1,9 @@
+:root{
+   --primary: #00FF00;
+   --secondary: #5b6d94;
+   --text:white;
+   --bg-green:#00ff00;
+}
 body {
   font-family: "Lato", sans-serif;
 }
@@ -9,17 +15,17 @@ body {
     background-position: bottom;
 }
 .account{
- 
     margin:auto;
     max-width: 100%;
     padding: 30px;
     margin-top:20px; 
-    background-color: #00FF00;
-    box-shadow: 10px 10px rgb(0, 0, 128);
+    background-color: var(--bg-green);
+    box-shadow: 10px 10px rgb(68, 134, 48);
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(180deg,rgb(61, 61, 153),rgb(80, 138, 91))
 }
 
 
@@ -33,13 +39,14 @@ body {
   background-color:  #229954;
   overflow-x: hidden;
   padding-top: 16px;
+  background-image: linear-gradient(180deg,green,white)
 }
 
 .sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: var(--text);
   display: block;
 }
 
@@ -60,6 +67,7 @@ main {
   background: #229954;
   box-shadow: 10px 10px #d9d9d9;
   color:white ;
+  background-image: linear-gradient(180deg,rgb(54, 139, 54),rgb(87, 62, 62))
 }
 .input-container{
     width: 100%;
