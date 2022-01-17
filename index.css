@@ -1,4 +1,6 @@
-body {font-family: "Lato", sans-serif;}
+body {
+  font-family: "Lato", sans-serif;
+}
 .about {
     background-image: url(./asserts/money.jpg);
     background-size: cover;
@@ -12,8 +14,8 @@ body {font-family: "Lato", sans-serif;}
     max-width: 100%;
     padding: 30px;
     margin-top:20px; 
-    background-color: #f1f1f1;
-    box-shadow: 10px 10px #706f6f;
+    background-color: #00FF00;
+    box-shadow: 10px 10px rgb(0, 0, 128);
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -28,7 +30,7 @@ body {font-family: "Lato", sans-serif;}
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(128, 128, 128);
+  background-color:  #229954;
   overflow-x: hidden;
   padding-top: 16px;
 }
@@ -55,8 +57,9 @@ main {
   display: grid;
   gap:20px;
   padding: 30px;
-  background: #fff;
+  background: #229954;
   box-shadow: 10px 10px #d9d9d9;
+  color:white ;
 }
 .input-container{
     width: 100%;
@@ -79,4 +82,25 @@ main {
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 255);
+  border-radius: 10px;
+}
+
+.footer{
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(0, 0, 128);
+  text-align: center;
+  color: #fff;
 }

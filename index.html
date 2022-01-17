@@ -18,16 +18,20 @@
   <a href="#return"><i class="fa fa-home"></i> Return loan</a>
 </div>
 <main>
-  <h1 style="text-align: center;background-color: rgb(128, 128, 128);color: white">Welcome to Get Loan.com</h1>
-<section id="about" class="account about">
+  <h1 style="text-align: center;background-color: rgb(0, 0, 128);color: white">Welcome to Get Loan.com</h1>
+<section id="account" class="account">
+  <div class="form">
 <h2>About us</h2>
 <p>Get loan finance is the branch of management that concerns itself with the managerial application of finance techniques and theory, emphasizing the financial aspects of managerial decisions; the assessment is per the managerial perspectives of planning, directing, and controlling. The techniques addressed are drawn in the main from managerial accounting and corporate finance: the former allow management to better understand, and hence act on, financial information relating to profitability and performance; the latter, as above, are about optimizing the overall financial structure, including its impact on working capital. The implementation of these techniques - i.e. financial management - is described above. Academics working in this area are typically based in business school finance departments, in accounting, or in management science.
 </p>
+</div>
 </section>
 <section id="account" class="account">
+  <div style="color: white;">
 <h2>Account</h2>
 <h3>Make a new account</h3>
-<br>
+</div>
+
 <form class="form">
 <div class="input-container">
   <label>First Name:</label>
@@ -53,10 +57,14 @@
 <label>Permanent Adress</label>
 <input type="text" name="address" placeholder="i.e post office,city,district">
 </div>
-<button type="submit">SUBMIT</button>
+
+
+<button class="button" type="submit">SUBMIT</button>
+
 </form>
 </section>
 <section class="account" id="requirements">
+  <div class="form">
   <h2>Requirements </h2>
    
     <h4>Eligibility & Documents</h4>
@@ -73,11 +81,12 @@
        <p>Have a valid mobile number.</p>
      </li>
   </ul>
+  </div>
 </section>
 
 
 <section class="account " id="types">
- 
+ <div class="form">
   <h2>Loan types</h2>
   <ul>
    <li>
@@ -90,12 +99,19 @@
      <p>Bussiness loan</p>
    </li>
    <ul>
-   
+   </div>
 </section>
 
 
+
 <section class="account" id="calculte">
-  <h2>Calculate Loan</h2>
+  <div style="color: white;">
+  
+  <h2>Calculate and Apply loan</h2>
+  </div>
+  
+ 
+  
 <div class="form" id="loan_cal" >
   <div class="input-container" ><label for="loan_period">Loan Period</label>
     <select name="loan_period" id="loan_period" class="select" value="">
@@ -107,7 +123,7 @@
   </div>
   <div class="input-container" ><label for="amount">Amount</label>
   <div>
-    <input type="number" value="" oninput="check_amount()" placeholder="10k-100k" id="amount" name="amount" min="10000" max="100000" >
+    <input type="number" value="" oninput="check_amount()" placeholder="10k-1000k "id="amount" name="amount" min="10000" max="100000" >
     <span id="error"></span>
   </div>
   </div>
@@ -119,19 +135,25 @@
       <option value="12">12 months</option>
     </select>
   </div>
-  <button type="button" onclick="calculate_loan()">Calculate</button>
+  <div class="input-container"><label for="type">Loan type</label>
+    <select name="type" id="type" class="select" value="">
+      <option value="1">Car loan</option>
+      <option value="3">Home loan</option>
+      <option value="6">Business loan</option>
+      
+    </select>
+  </div>
+  <button class="button" type="button" onclick="calculate_loan()">Calculate</button>
   <h3 id="installment"></h3>
+  <div class="input-container"><label for="account_number">Account number</label>
+    <input type="number"placeholder="3456789900">
+    </div>
+  <button class="button" onclick="myFunction()">Apply</button>
+  <p id="apply"></p>
 </div>
 </section>
-<section class="account" id="apply">
-  <h2>apply</h2>
-  <!-- <iframe src="https://yb-solution.vercel.app/" frameborder="0" style="width: 100%; height: 500px;"></iframe> -->
-</section>
-<section class="account" id="return">
-  <h2>return coming soon</h2>
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dolorem itaque obcaecati nesciunt corporis id repudiandae alias aperiam adipisci, fugit voluptatibus cupiditate praesentium, impedit nemo laboriosam nam consequatur vero quo. Perferendis, optio laborum, quidem at nostrum odio minima sequi dolorum doloremque corporis excepturi, ut velit similique eius autem saepe facere debitis distinctio ipsa. Nulla, omnis hic? Consequatur qui perferendis impedit architecto necessitatibus quasi obcaecati magnam dolorum quia nam maxime magni repudiandae sit blanditiis nisi dolor deleniti libero modi quaerat, quibusdam debitis? Optio fugit deserunt rerum sit perspiciatis quasi minus? Porro molestiae totam accusantium quo praesentium expedita eius, consectetur sequi nam.</p>
-</section> 
-</main>
-<script src="./index.js"></script>
+ </main> 
+ <footer class="footer">Getloan.com ©  2022-2023 All rights reserved</footer>
+ <script src="./index.js"></script> 
 </body>
 </html> 
