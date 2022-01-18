@@ -14,8 +14,6 @@
   <a href="#requirements"><i class="fa fa-registered"></i> Requirements</a>
   <a href="#types"><i class="fa fa-home"></i> Loan types</a> 
   <a href="#calculte"><i class="fa fa-calculator"></i> Calculte loan</a> 
-  <a href="#apply"><i class="fa fa-home"></i> Apply loan</a> 
-  <a href="#return"><i class="fa fa-home"></i> Return loan</a>
 </div>
 <main>
   <h1 style="text-align: center;background-color: rgb(0, 0, 128);color: white">Welcome to Get Loan.com</h1>
@@ -107,12 +105,8 @@
 
 <section class="account" id="calculte">
   <div style="color: white;">
-  
   <h2>Calculate and Apply loan</h2>
   </div>
-  
- 
-  
 <div class="form" id="loan_cal" >
   <div class="input-container" ><label for="loan_period">Loan Period</label>
     <select name="loan_period" id="loan_period" class="select" value="">
@@ -136,21 +130,8 @@
       <option value="12">12 months</option>
     </select>
   </div>
-  <div class="input-container"><label for="type">Loan type</label>
-    <select name="type" id="type" class="select" value="">
-      <option value="1">Car loan</option>
-      <option value="3">Home loan</option>
-      <option value="6">Business loan</option>
-      
-    </select>
-  </div>
   <button class="button" type="button" onclick="calculate_loan()">Calculate</button>
   <h3 id="installment"></h3>
-  <div class="input-container"><label for="account_number">Account number</label>
-    <input type="number"placeholder="3456789900">
-    </div>
-  <button class="button" onclick="myFunction()">Apply</button>
-  <p id="apply"></p>
 </div>
 </section>
  </main> 
