@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loan management</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="top_header">
+    <h3 >𝙇𝙤𝙖𝙣 𝙢𝙖𝙣𝙖𝙜𝙚𝙢𝙚𝙣𝙩</h3>
+     <div>
+         <button class="button">Log out</button></div>
+</div>
+
+  <div class="sidebar">
+    <a href="index.html" ><i class="fa fa-home"></i>𝙃𝙤𝙢𝙚</a>
+    <a href="login.html" >𝙇𝙤𝙜𝙞𝙣</a> 
+    <a href="Customerd.html"> 𝘾𝙪𝙨𝙩𝙤𝙢𝙚𝙧 𝙙𝙚𝙩𝙖𝙞𝙡</a>
+    <a href="products-payments.html">𝘼𝙙𝙙 𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙨</a>
+    <a href="Cash.html" >𝘾𝙖𝙨𝙝</a> 
+    <a href="Installments.html" >𝙄𝙣𝙨𝙩𝙖𝙡𝙡𝙢𝙚𝙣𝙩𝙨</a>
+  </div>
+
+
+<main>
+
+
+  <section class="account" id="calculte">
+    
+    
+    
+    
+   
+  
+  <div class="form" id="loan_cal" >
+    <h2>Guarantor no 1</h2>
+    <input type="text" name="g1name"placeholder="Full Name">
+    <input type="number" name="g1cnic" placeholder="CNIC">
+    <input type="number" name="g1phone"placeholder="Phone">
+    <h2>Guarantor no 2</h2>
+    <input type="text" name="g2name"placeholder="Full Name">
+    <input type="number" name="g2cnic" placeholder="CNIC">
+    <input type="number" name="g2phone"placeholder="Phone">
+   
+  
+    
+    <h2>Calculation</h2>
+    <input type="number" value="" oninput="check_amount()"id="amount" name="amount"  placeholder="Amount">
+      <span id="error"></span>
+    
+      <select name="loan_period" id="loan_period" class="select" value="">
+       <option value="1"disabled>Loan period</option>
+        <option value="1">1 year</option>
+        <option value="2">2 year</option>
+        <option value="4">4 year</option>
+        <option value="8">8 year</option>
+      </select>
+      
+    
+      <!-- <input type="number" value="" oninput="check_amount()"id="amount" name="amount"  placeholder="Amount">
+      <span id="error"></span> -->
+      
+    
+
+    <select name="installments" id="installments" class="select" value="">
+      <option value="1"disabled>Installments</option>
+      <option value="1">1 months</option>
+      <option value="3">3 months</option>
+      <option value="6">6 months</option>
+      <option value="12">12 months</option>
+    </select>
+    
+    <button class="button" type="button" onclick="calculate_loan()">Calculate</button>
+    <h3 id="installment"></h3>
+    <a href="slip.html">
+    <button class="button" type="submit">Generat slip</button>
+    </a>
+    </div>
+      
+      
+   
+  </section>
+   </main> 
+ 
+  
+  
+   <footer class="footer">Getloan.com ©  2022 All rights reserved</footer>
+   <script src="./index.js"></script> 
+  </body>
+  </html> 
+  
+</main>
+</body>
+</html>

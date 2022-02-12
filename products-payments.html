@@ -1,0 +1,113 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loan management</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+<style>
+  .inputContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .inputContainer input{
+    max-width: 150px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+  <div class="top_header">
+    <h3 >𝙇𝙤𝙖𝙣 𝙢𝙖𝙣𝙖𝙜𝙚𝙢𝙚𝙣𝙩</h3>
+     <div>
+         <button class="button">Log out</button></div>
+</div>
+
+<div class="sidebar">
+  <a href="index.html" ><i class="fa fa-home"></i>𝙃𝙤𝙢𝙚</a>
+  <a href="login.html" >𝙇𝙤𝙜𝙞𝙣</a> 
+  <a href="Customerd.html"> 𝘾𝙪𝙨𝙩𝙤𝙢𝙚𝙧 𝙙𝙚𝙩𝙖𝙞𝙡</a>
+  <a href="products-payments.html">𝘼𝙙𝙙 𝙥𝙧𝙤𝙙𝙪𝙘𝙩𝙨</a>
+  <a href="Cash.html" >𝘾𝙖𝙨𝙝</a> 
+  <a href="Installments.html" >𝙄𝙣𝙨𝙩𝙖𝙡𝙡𝙢𝙚𝙣𝙩𝙨</a>
+</div>
+<main>
+
+
+<section id="account" class="account">
+    <div style="color: white;">
+  </div>
+  
+  <form class="form ">
+    <h2>Add products</h2>
+    
+ 
+    
+  <div class="container">
+    <div id="main">
+      <fieldset>
+        <legend>Product 1</legend>
+        <div class="inputContainer">
+          <input type="text" name="p1type" placeholder="Type">
+          <input type="text" name="p1name" placeholder="Name">
+          <input type="text" name="p1brand" placeholder="Brand">
+          <input type="number" name="p1price" placeholder="Price">
+          <input type="text" name="p1specifications" placeholder="Specifications">
+          <input type="number" name="p1quantity" placeholder="Quantity">
+
+        </div>
+      </fieldset>
+    </div>
+    <button class="button">Add product</button>
+    <button class="button" type="button" onclick="addProduct()">ADD More Product</button>
+  </div>
+  <script>
+    function addProduct (){
+      const allTag = document.querySelectorAll("fieldset")
+      const tag = document.createElement("fieldset");
+      tag.innerHTML= `<legend>Product ${allTag.length+1}</legend>
+      <div class="inputContainer">
+        
+        <input type="text" name="p${allTag.length+1}type" placeholder="Type">
+        <input type="text" name="p${allTag.length+1}name" placeholder="Name">
+        <input type="text" name="p${allTag.length+1}brand" placeholder="Brand">
+        <input type="number" name="p${allTag.length+1}price" placeholder="Price">
+        <input type="text" name="p${allTag.length+1}specifications" placeholder="Specifications">
+        <input type="number" name="p${allTag.length+1}quantity" placeholder="Quantity">
+      </div>`
+      const element = document.getElementById("main");
+      element.appendChild(tag);
+    }
+   
+  </script>
+  
+  </form>
+  </section>
+  <form action="#"></form>
+  <section id="account" class="account">
+    <div class="account form">
+      <h2>Payments</h2>
+      <a href="Cash.html">
+        <button class="button" type="button">Cash</button>
+      </a>
+    
+      <a href="Installments.html">
+        <button class="button" type="button">Installments</button>
+      </a>      
+      </div>
+    </section >
+    </form>
+    
+    
+</main>
+<footer class="footer">Getloan.com ©  2022 All rights reserved</footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find easy loan</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+      }
+      .about {
+          background-image: url(./asserts/buyphones.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: bottom;
+      }
+      .account{
+        
+       border-radius: 20px;
+          margin:auto;
+          max-width: 70%;
+          padding: 30px;
+          margin-top:20px; 
+          /* background-color: var(--bg-green); */
+          /* box-shadow: 10px 10px rgb(2, 0, 143); */
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-image: linear-gradient(180deg,rgb(64, 226, 0),rgb(28, 61, 192))
+          
+      }
+      
+      
+      .sidebar {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color:  #2e3a74;
+        overflow-x: hidden;
+        padding-top: 16px;
+        background-image: linear-gradient(180deg,rgb(39, 20, 122),white)
+      }
+      
+      .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--text);
+        display: block;
+      }
+      
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+      
+      main {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        padding: 0px 10px;
+      }
+      .form{
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        display: grid;
+        gap:20px;
+        padding: 30px;
+        background: lightslategray;
+        border: lightsalmon;
+        /* box-shadow: 10px 10px #000f97; */
+        color:black ;
+        font-size: 20px;
+        /* background-image: linear-gradient(180deg,rgb(198, 223, 218),rgb(3, 3, 199)) */
+      }
+      .input-container{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+      }
+      .input-container div{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+      }
+      .input-container div span{
+        text-align: left;
+      }
+      .select{
+        width: 100%;
+        max-width: 180px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+      }
+      .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: rgb(0, 0, 255);
+        border-radius: 10px;
+      }
+      
+      .footer{
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(0, 0, 128);
+        text-align: center;
+        color: #fff;
+      }
+</head>
+<body style="background-image: url(./asserts/buyphones.png);">
+
+<div class="sidebar">
+  <a href="#home"><i class="fa fa-home"></i> Home</a>
+  <a href="#about"> Place order</a>
+  <a href="#account"> Select products</a>
+  <a href="#requirements">Payments</a>
+  <a href="#types">Add products</a> 
+  
+</div>
+<main>
+    <h1 style="text-align: center;color: rgb(7, 6, 98); font-size: 100px;">LOAN SHOP</h1>
+    <section class="account" id="requirements">
+        <div class="form">
+        <h2>Select product </h2>
+        <div class="input-container" ><label for="loan_period">Type</label>
+          
+          <select name="Type" id="Type" class="Type" value="">
+            <option value="1">Mobile Phones</option>
+            <option value="2">Motorcycles</option>
+            <option value="4">Electronics</option>
+            <!-- <option value="8">8 year</option> -->
+          </select>
+          
+         
+       
+         
+         
+        </div>
+        <label>Product</label>
+        <input list="brow">
+        <datalist id="brow">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+      
+        </datalist>
+        <button class="button" type="submit">Next</button>
+      </section>
+      <footer class="footer">Getloan.com ©  2022 All rights reserved</footer>
+      <script src="./index.js"></script> 
+     </body>
+     </html> 
