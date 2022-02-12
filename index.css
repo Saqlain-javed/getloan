@@ -5,28 +5,30 @@
    --bg-green:#00ff00;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 .about {
-    background-image: url(./asserts/money.jpg);
+    background-image: url(./asserts/buyphones.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
 }
 .account{
-    margin:auto;
-    max-width: 100%;
-    padding: 30px;
-    margin-top:20px; 
-    background-color: var(--bg-green);
-    box-shadow: 10px 10px rgb(68, 134, 48);
-    margin-bottom: 20px;
+    margin-top:auto;
+    padding: 10px;
+    margin-top:2px; 
+    background-color: #f2f2f2;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(180deg,rgb(61, 61, 153),rgb(80, 138, 91))
-}
+}    
+
 
 
 .sidebar {
@@ -34,12 +36,9 @@ body {
   width: 200px;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 62px;
   left: 0;
-  background-color:  #229954;
-  overflow-x: hidden;
-  padding-top: 16px;
-  background-image: linear-gradient(180deg,green,white)
+  background-color:  #001529;
 }
 
 .sidebar a {
@@ -48,6 +47,8 @@ body {
   font-size: 20px;
   color: var(--text);
   display: block;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .sidebar a:hover {
@@ -59,15 +60,17 @@ main {
   padding: 0px 10px;
 }
 .form{
+  /* border-radius: 10px; */
+  margin-top: 90PX;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   display: grid;
-  gap:20px;
-  padding: 30px;
-  background: #229954;
-  box-shadow: 10px 10px #d9d9d9;
-  color:white ;
-  background-image: linear-gradient(180deg,rgb(54, 139, 54),rgb(87, 62, 62))
+  gap:10px;
+  padding: 15px;
+  background: white;
+  /* border: lightsalmon; */
+  color:black ;
+  font-size: 20px;
 }
 .input-container{
     width: 100%;
@@ -92,9 +95,11 @@ main {
   .sidebar a {font-size: 18px;}
 }
 .button {
+  /* float: left; */
+  width: 100%;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -102,13 +107,42 @@ main {
   margin: 4px 2px;
   cursor: pointer;
   background-color: rgb(0, 0, 255);
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .footer{
-  width: 100%;
-  padding: 20px;
-  background-color: rgb(0, 0, 128);
+  padding: 20px 0;
+  background-color: #f2f2f2;
   text-align: center;
-  color: #fff;
+  color: #000000A6;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #000;
+  position: fixed;
 }
+input, select{
+  border-radius: 1px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(185, 185, 185);
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+  color: rgb(7, 6, 98); 
+  font-size: 4em;
+}
+.top_header {
+  background-color: #001529;
+  color: blue;
+  top:0;
+  padding: 1px 20px;
+  position: fixed;
+  width: -webkit-fill-available;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

@@ -17,3 +17,5 @@ function myFunction() {
 function showError(id, message){
     document.getElementById("error").innerText = "red"
 }
+
+
